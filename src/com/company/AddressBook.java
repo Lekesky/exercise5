@@ -33,9 +33,11 @@ public class AddressBook {
 
 
     public void searchContact(){
+        PersonInfo person = new PersonInfo(name, email);
         System.out.println("Search for name");
-        String searchName = input.nextLine();
-        System.out.println("There Email is: " ); //Need to be able to search for person's email by looking up name in addressbook
+        int i = input.nextInt();
+        String getEmailAddress = String.valueOf(addressBook.get(i).getEmail());
+        System.out.println("There Email is: " + getEmailAddress); //Need to be able to search for person's email by looking up name in addressbook
     }
 
     @Override

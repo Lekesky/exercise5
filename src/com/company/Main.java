@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class Main {
     static Scanner input = new Scanner(System.in);
     static int action;
-    static String userName;
-    static String emailAddress;
-    static int placement;
     static AddressBook book = new AddressBook();
 
     public static void prompt() {
