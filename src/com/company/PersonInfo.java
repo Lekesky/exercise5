@@ -2,8 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class PersonInfo {
-    Scanner input = new Scanner(System.in);
+public class PersonInfo {       //Creates the person, name and email gets added
     private String name;
     private String email;
 

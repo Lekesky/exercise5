@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner input = new Scanner(System.in);
     static int action;
-    static AddressBook book = new AddressBook();
+    static AddressBook book = new AddressBook();    //Creates the addressbook
 
     public static void prompt() {
         System.out.println("""
@@ -24,7 +24,7 @@ public class Main {
         int action1 = input.nextInt();
         action = action1;
 
-        while (action != 0) {
+        while (action != 0) {       //While action does not equal zero, a menu will pop up with actions to select
             if (action == 1) {
                 book.newContact();
                 System.out.println("Contact has been added");
@@ -43,27 +43,6 @@ public class Main {
             int action2 = input.nextInt();
             action = action2;
 
-//        System.out.println("Enter in a name");
-//        userName = input.nextLine();
-//        if(!(userName.equalsIgnoreCase("end"))) {
-//            System.out.println("Enter in an email address");
-//            emailAddress = input.nextLine();
-//        }
-//        while (!(userName.equalsIgnoreCase("end"))) {
-//            System.out.println("Enter in a name");
-//            userName = input.nextLine();
-//            if (!(userName.equalsIgnoreCase("end"))) {
-//                System.out.println("Enter in an email address");
-//                emailAddress = input.nextLine();
-//            }
-//
-//            PersonInfo person = new PersonInfo(userName, emailAddress);
-//            book.addressBook.put(1, person);
-//
-//            placement++;
-//        }
-//
-//        System.out.println(book.toString());
         }
     }
 }
